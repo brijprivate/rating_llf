@@ -1,22 +1,14 @@
 {
+  "name": "ratingLLF",
+  "version": "1.0.0",
+  "main": "app.js",
   "scripts": {
     "build": "node app.js"
   },
-  "engines": {
-    "node": "18"
-  },
-  
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "mongodb": "^6.3.0",
-    "mongoose": "^8.1.0",
-    "netlify-cli": "^12.7.2",
-    "netlify-lambda": "^2.0.15",
-    "serverless-http": "^2.7.0"
-  },
-
-  "main": "app.js"
-
-
+    "mongoose": "^8.1.0"
+  }
 }
