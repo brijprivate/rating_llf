@@ -28,9 +28,9 @@ const projectRoutes = require('./routes/projectRoutes');
 const ratingRoutes = require('./routes/ratingRoutes');
 const winner = require('./routes/adminRoutes');
 
-app.use('/projects', projectRoutes);
-app.use('/ratings', ratingRoutes);
-app.use('/winner', winner);
+app.use('/.netlify/functions/api/projects', projectRoutes);
+app.use('/.netlify/functions/api/ratings', ratingRoutes);
+app.use('/.netlify/functions/api/winner', winner);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
