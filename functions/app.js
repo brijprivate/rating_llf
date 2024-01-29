@@ -7,6 +7,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 3000;
+const serverless = require('serverless-http');
 
 // Middleware
 app.use(cors());
@@ -35,3 +36,4 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
+module.exports.handler = serverless(app);
