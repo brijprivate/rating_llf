@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "netlify deploy --prod"
+    "build": "node app.js"
   },
   "engines": {
     "node": "18"

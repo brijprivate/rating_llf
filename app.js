@@ -24,9 +24,9 @@ db.once('open', () => {
 });
 
 // API Routes
-const projectRoutes = require('./routes/projectRoutes');
-const ratingRoutes = require('./routes/ratingRoutes');
-const winner = require('./routes/adminRoutes');
+const projectRoutes = require('./functions/routes/projectRoutes');
+const ratingRoutes = require('./functions/routes/ratingRoutes');
+const winner = require('./functions/routes/adminRoutes');
 
 app.use('/.netlify/functions/api/projects', projectRoutes);
 app.use('/.netlify/functions/api/ratings', ratingRoutes);
